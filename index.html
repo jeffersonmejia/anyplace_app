@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+		/>
+		<title>AnyPlace App</title>
+		<link
+			rel="shortcut icon"
+			href="/src/assets/favicon/favicon.ico"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<main class="position-relative">
+			<figure class="position-relative w-100 m-0" style="height: 95vh; overflow: hidden">
+				<img
+					src="/src/assets/cover/home.png"
+					alt="Menú"
+					class="w-100 h-100 object-fit-cover"
+				/>
+				<div
+					class="position-absolute top-0 start-0 w-100 h-100 bg-dark"
+					style="opacity: 0.7"
+				></div>
+				<figcaption
+					class="position-absolute top-50 start-50 translate-middle text-white text-center"
+				>
+					<h1 class="display-3 fw-bold">Reservas</h1>
+					<h4>Eventos y restaurantes</h4>
+				</figcaption>
+			</figure>
+
+			<div id="loader" class="text-center my-5 py-5">
+				<div class="d-inline-flex flex-column align-items-center gap-3">
+					<div
+						class="spinner-border text-primary"
+						role="status"
+						style="width: 2.5rem; height: 2.5rem"
+					></div>
+					<p class="text-secondary fw-semibold m-0">Cargando menú...</p>
+				</div>
+			</div>
+
+			<section class="container py-5 d-none" id="menu-section">
+				<h2 class="text-center fw-bold text-primary mb-5">Menú de Mariscos</h2>
+				<div id="menu" class="row g-4"></div>
+			</section>
+
+			<div id="menu" class="row g-4 mx-auto" style="width: 90%"></div>
+
+			<template id="card-template">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+						<img class="card-img-top food-img" alt="Comida" />
+						<div class="card-body p-4">
+							<h5 class="card-title fw-semibold text-primary mb-2"></h5>
+							<p class="card-text text-muted mb-3"></p>
+							<ul class="list-unstyled small text-secondary mb-4">
+								<li>
+									<i class="bi bi-geo-alt-fill me-1 text-danger"></i
+									><strong>Región:</strong> <span class="region"></span>
+								</li>
+								<li>
+									<i class="bi bi-cash-coin me-1 text-success"></i
+									><strong>Precio:</strong> $<span class="precio"></span>
+								</li>
+							</ul>
+							<button class="btn btn-outline-primary w-100">Ver más</button>
+						</div>
+					</div>
+				</div>
+			</template>
+		</main>
+		<script src="/src/js/main.js" type="module"></script>
+		<script src="/src/js/index.js" type="module"></script>
+	</body>
+</html>
