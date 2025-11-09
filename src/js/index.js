@@ -1,20 +1,6 @@
 import $ from 'jquery'
 import '../css/index.css'
 
-// LOAD NAVIGATION BAR
-function loadNav() {
-	$.get('/anyplace_app/src/templates/nav.html', (data) => {
-		$('main').prepend($(data))
-	})
-}
-
-// LOAD FOOTER
-function loadFooter() {
-	$.get('/anyplace_app/src/templates/footer.html', (data) => {
-		$('main').after($(data))
-	})
-}
-
 // CREATE A FOOD CARD FROM TEMPLATE AND FILL DATA
 function createFoodCard(food, template) {
 	return new Promise((resolve) => {
@@ -26,17 +12,10 @@ function createFoodCard(food, template) {
 		$clone.find('.region').text(food.region)
 		$clone.find('.precio').text(food.precio_aproximado_usd.toFixed(2))
 
-		// FETCH RANDOM IMAGE
 		$.getJSON('https://foodish-api.com/api/')
-			.done((imgData) => {
-				$clone.find('.food-img').attr('src', imgData.image)
-			})
-			.fail(() => {
-				$clone.find('.food-img').attr('src', '/src/assets/placeholder.jpg')
-			})
-			.always(() => {
-				resolve($clone)
-			})
+			.done((imgData) => $clone.find('.food-img').attr('src', imgData.image))
+			.fail(() => $clone.find('.food-img').attr('src', '/src/assets/placeholder.jpg'))
+			.always(() => resolve($clone))
 	})
 }
 
@@ -58,9 +37,6 @@ function loadMenu() {
 	})
 }
 
-// DOCUMENT READY
 $(document).ready(() => {
-	loadNav()
-	loadFooter()
 	loadMenu()
 })

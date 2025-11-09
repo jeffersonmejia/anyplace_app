@@ -6,7 +6,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
 		/>
-		<title>AnyPlace App</title>
+		<title>AnyPlace App | Inicio</title>
 		<link
 			rel="shortcut icon"
 			href="/src/assets/favicon/favicon.ico"
@@ -29,9 +29,99 @@
 					class="position-absolute top-50 start-50 translate-middle text-white text-center"
 				>
 					<h1 class="display-3 fw-bold">Reservas</h1>
-					<h4>Eventos y restaurantes</h4>
+					<h4>Planifica con nosotros</h4>
 				</figcaption>
 			</figure>
+
+			<section
+				id="business-carousel"
+				class="container py-5"
+				style="width: 100%; max-width: 750px"
+			>
+				<div
+					id="carouselExampleIndicators"
+					class="carousel slide"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0"
+							class="active"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2"
+						></button>
+					</div>
+					<div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
+						<div class="carousel-item active">
+							<img
+								src="/src/assets/carrusel/1.jpg"
+								class="d-block w-100"
+								alt="Reservas para eventos"
+							/>
+							<div
+								class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3"
+							>
+								<h5>Reserva tu mesa para eventos</h5>
+								<p>
+									Organiza tus celebraciones de manera fácil y rápida, tanto para usuarios
+									como administradores.
+								</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="/src/assets/carrusel/2.jpg"
+								class="d-block w-100"
+								alt="Restaurantes"
+							/>
+							<div
+								class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3"
+							>
+								<h5>Descubre restaurantes</h5>
+								<p>Explora distintos locales y realiza reservas desde una sola app.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="/src/assets/carrusel/3.jpg" class="d-block w-100" alt="App" />
+							<div
+								class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3"
+							>
+								<h5>Una app para todos</h5>
+								<p>
+									Tanto usuarios como administradores gestionan reservas y eventos de
+									manera centralizada.
+								</p>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon"></span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon"></span>
+					</button>
+				</div>
+			</section>
 
 			<div id="loader" class="text-center my-5 py-5">
 				<div class="d-inline-flex flex-column align-items-center gap-3">
