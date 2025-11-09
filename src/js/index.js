@@ -14,7 +14,7 @@ function createFoodCard(food, template) {
 
 		$.getJSON('https://foodish-api.com/api/')
 			.done((imgData) => $clone.find('.food-img').attr('src', imgData.image))
-			.fail(() => $clone.find('.food-img').attr('src', '/src/assets/placeholder.jpg'))
+			.fail(() => $clone.find('.food-img').attr('src', './src/assets/placeholder.jpg'))
 			.always(() => resolve($clone))
 	})
 }
@@ -26,7 +26,7 @@ function loadMenu() {
 	const $menu = $('#menu')
 	const template = document.getElementById('card-template')
 
-	$.getJSON('/anyplace_app/api/food.json', (data) => {
+	$.getJSON('./anyplace_app/api/food.json', (data) => {
 		const comidas = data.seafood_ecuador
 		const promises = comidas.map((c) => createFoodCard(c, template))
 
