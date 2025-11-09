@@ -1,27 +1,19 @@
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap'
 
-function loadNav() {
-	fetch('/anyplace_app/src/templates/nav.html')
-		.then((response) => response.text())
-		.then((data) => {
-			document.querySelector('main').insertAdjacentHTML('afterbegin', data)
-		})
+const d = document
+
+const main = d.querySelector('main')
+const base = import.meta.env.BASE_URL
+
+const loadHTML = async (file, pos) => {
+	const res = await fetch(base + file)
+	const html = await res.text()
+	main.insertAdjacentHTML(pos, html)
 }
 
-function loadFooter() {
-	fetch('/anyplace_app/src/templates/footer.html')
-		.then((response) => response.text())
-		.then((data) => {
-			document.querySelector('main').insertAdjacentHTML('beforeend', data)
-		})
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-	loadNav()
-	loadFooter()
+d.addEventListener('DOMContentLoaded', async () => {
+	await loadHTML('templates/nav.html', 'afterbegin')
+	await loadHTML('templates/footer.html', 'beforeend')
 })
