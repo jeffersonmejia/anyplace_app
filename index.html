@@ -12,12 +12,28 @@
 			href="/anyplace_app/assets/favicon-Dmf7U3QS.ico"
 			type="image/x-icon"
 		/>
-		<script type="module" crossorigin src="/anyplace_app/assets/main-DhXFEEW6.js"></script>
+		<script type="module" crossorigin src="/anyplace_app/assets/main-Cml0iPmI.js"></script>
 		<link rel="modulepreload" crossorigin href="/anyplace_app/assets/main-DsXlC2XO.js">
 		<link rel="stylesheet" crossorigin href="/anyplace_app/assets/main-DdNFP3fy.css">
 		<link rel="stylesheet" crossorigin href="/anyplace_app/assets/main-DqZc6GFK.css">
 	</head>
-	<body>
+	<body
+		data-bs-spy="scroll"
+		data-bs-target="#aside-spy"
+		data-bs-offset="100"
+		tabindex="0"
+	>
+		<aside
+			id="aside-spy"
+			class="position-fixed top-50 end-0 translate-middle-y bg-light p-3 rounded-start shadow-sm"
+		>
+			<nav class="nav flex-column">
+				<a class="nav-link text-secondary active" href="#business-carousel">Servicios</a>
+				<a class="nav-link text-secondary" href="#menu-section">Menú</a>
+				<a class="nav-link text-secondary" href="#footer">Contacto</a>
+			</nav>
+		</aside>
+
 		<main class="position-relative">
 			<figure class="position-relative w-100 m-0" style="height: 95vh; overflow: hidden">
 				<img
@@ -40,8 +56,9 @@
 			<section
 				id="business-carousel"
 				class="container py-5"
-				style="width: 100%; max-width: 750px"
+				style="width: 100%; max-width: 600px; margin-left: auto"
 			>
+				<h2 class="text-center fw-bold text-primary mb-5">Servicios</h2>
 				<div
 					id="carouselExampleIndicators"
 					class="carousel slide"
@@ -66,6 +83,7 @@
 						></button>
 					</div>
 					<div class="carousel-inner rounded-4 overflow-hidden shadow-sm">
+						<h2></h2>
 						<div class="carousel-item active">
 							<img
 								src="/anyplace_app/assets/1-C9nDShk5.jpg"
@@ -138,13 +156,17 @@
 				</div>
 			</div>
 
-			<section class="container py-5 d-none" id="menu-section">
+			<section
+				class="container py-5 d-none"
+				id="menu-section"
+				style="padding-right: 120px"
+			>
 				<h2 class="text-center fw-bold text-primary mb-5">Menú de Mariscos</h2>
 				<div id="menu" class="row g-4"></div>
 			</section>
 
 			<div id="menu" class="row g-4 mx-auto" style="width: 90%"></div>
-
+			<div id="footer"></div>
 			<template id="card-template">
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
