@@ -1,0 +1,109 @@
+{
+	"seafood_ecuador": [
+		{
+			"id": 1,
+			"nombre": "Ceviche de camarón",
+			"descripcion": "Camarones cocidos en jugo de limón con tomate, cebolla y cilantro.",
+			"region": "Costa",
+			"precio_aproximado_usd": 6.5
+		},
+		{
+			"id": 2,
+			"nombre": "Ceviche de concha",
+			"descripcion": "Conchas negras marinadas con limón, cebolla, tomate y cilantro.",
+			"region": "Esmeraldas",
+			"precio_aproximado_usd": 7.0
+		},
+		{
+			"id": 3,
+			"nombre": "Encocado de pescado",
+			"descripcion": "Filete de pescado cocido en leche de coco con pimientos y cebolla.",
+			"region": "Manabí",
+			"precio_aproximado_usd": 8.0
+		},
+		{
+			"id": 4,
+			"nombre": "Encocado de camarón",
+			"descripcion": "Camarones al vapor en salsa espesa de coco y especias.",
+			"region": "Esmeraldas",
+			"precio_aproximado_usd": 8.5
+		},
+		{
+			"id": 5,
+			"nombre": "Arroz marinero",
+			"descripcion": "Arroz salteado con camarones, calamar, pescado y mejillones.",
+			"region": "Costa",
+			"precio_aproximado_usd": 9.0
+		},
+		{
+			"id": 6,
+			"nombre": "Cazuela de mariscos",
+			"descripcion": "Plato espeso de plátano verde y mariscos cocidos en maní.",
+			"region": "Manabí",
+			"precio_aproximado_usd": 9.5
+		},
+		{
+			"id": 7,
+			"nombre": "Sopa marinera",
+			"descripcion": "Caldo espeso con pescado, camarones, calamar y yuca.",
+			"region": "Guayas",
+			"precio_aproximado_usd": 8.5
+		},
+		{
+			"id": 8,
+			"nombre": "Pescado frito",
+			"descripcion": "Pescado entero frito acompañado de arroz y patacones.",
+			"region": "Costa",
+			"precio_aproximado_usd": 6.0
+		},
+		{
+			"id": 9,
+			"nombre": "Langostinos a la plancha",
+			"descripcion": "Langostinos asados con mantequilla y ajo.",
+			"region": "Santa Elena",
+			"precio_aproximado_usd": 10.0
+		},
+		{
+			"id": 10,
+			"nombre": "Bolón marinero",
+			"descripcion": "Bolón de verde relleno con camarones y queso.",
+			"region": "Guayas",
+			"precio_aproximado_usd": 5.5
+		},
+		{
+			"id": 11,
+			"nombre": "Tigrillo con camarones",
+			"descripcion": "Plátano majado con huevos, queso y camarones salteados.",
+			"region": "El Oro",
+			"precio_aproximado_usd": 6.5
+		},
+		{
+			"id": 12,
+			"nombre": "Chaulafán de mariscos",
+			"descripcion": "Arroz frito con mariscos al estilo ecuatoriano.",
+			"region": "Costa",
+			"precio_aproximado_usd": 8.0
+		},
+		{
+			"id": 13,
+			"nombre": "Sudado de pescado",
+			"descripcion": "Pescado cocido con tomate, cebolla, pimiento y hierbas.",
+			"region": "Manabí",
+			"precio_aproximado_usd": 7.0
+		},
+		{
+			"id": 14,
+			"nombre": "Viche de pescado",
+			"descripcion": "Sopa espesa de pescado con maní, yuca y plátano verde.",
+			"region": "Manabí",
+			"precio_aproximado_usd": 8.5
+		},
+		{
+			"id": 15,
+			"nombre": "Camarones al ajillo",
+			"descripcion": "Camarones salteados con ajo, mantequilla y perejil.",
+			"region": "Costa",
+			"precio_aproximado_usd": 7.5
+		}
+	]
+}
